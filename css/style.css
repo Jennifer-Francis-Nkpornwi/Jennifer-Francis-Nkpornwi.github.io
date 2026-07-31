@@ -1,6 +1,4 @@
-/* =========================
-   GLOBAL STYLES
-========================= */
+/* Reset */
 
 *{
     margin:0;
@@ -8,28 +6,34 @@
     box-sizing:border-box;
 }
 
+/* Page */
+
 body{
-    font-family: "Segoe UI", Arial, sans-serif;
-    background:#F8F9FA;
-    color:#333333;
-    line-height:1.6;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#f7f9fc;
+
 }
 
-/* =========================
-   NAVIGATION BAR
-========================= */
+/* Header */
 
 header{
-    background:#FFFFFF;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-    position:sticky;
-    top:0;
-    z-index:1000;
+
+    background:white;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
 }
+
+/* Navigation */
 
 .navbar{
 
+    width:90%;
+
     max-width:1200px;
+
     margin:auto;
 
     display:flex;
@@ -38,19 +42,23 @@ header{
 
     align-items:center;
 
-    padding:20px;
+    padding:20px 0;
 
 }
 
+/* Name */
+
 .logo{
 
-    font-size:1.4rem;
+    font-size:24px;
 
     font-weight:bold;
 
     color:#0A3D62;
 
 }
+
+/* Menu */
 
 .nav-links{
 
@@ -62,17 +70,19 @@ header{
 
 }
 
+/* Links */
+
 .nav-links a{
 
     text-decoration:none;
 
-    color:#333333;
+    color:#333;
 
-    font-weight:500;
-
-    transition:0.3s;
+    font-weight:600;
 
 }
+
+/* Hover */
 
 .nav-links a:hover{
 
