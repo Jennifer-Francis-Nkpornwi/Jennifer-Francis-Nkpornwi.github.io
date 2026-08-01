@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Wrangling: Significant Earthquakes (1965–2016) | Jennifer Francis-Nkpornwi</title>
+<meta name="description" content="Cleaning and structuring 23,000+ significant earthquake records using MySQL and SQL for analysis-ready use.">
+<meta name="theme-color" content="#0B132B">
+<link rel="icon" type="image/png" href="../images/jf-mark.png">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="../index.html" class="brand">
+      <img src="../images/jf-mark.png" alt="JF monogram">
+      <span class="brand-text"><strong>Jennifer Francis</strong><span>Business &amp; Data Analyst</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../projects.html" class="active">Projects</a></li>
+      <li><a href="../resume.html">Resume</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li><a href="../contact.html" class="nav-cta">Let's talk</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="case-hero">
+  <div class="wrap">
+    <a href="../projects.html" class="case-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> All projects</a>
+    <span class="eyebrow" style="color:var(--electric);">Data Analytics · SQL</span>
+    <h1>Data Wrangling: 50 Years of Earthquake Records</h1>
+    <p class="dek">A raw, messy, 23,000-row public dataset — cleaned and restructured in SQL until it was actually fit to analyze.</p>
+    <div class="case-meta">
+      <div><span>Role</span><strong>Data Analyst</strong></div>
+      <div><span>Tools</span><strong>MySQL, SQL, Data Cleaning</strong></div>
+      <div><span>Type</span><strong>Personal project · Kaggle dataset</strong></div>
+      <div><span>Source</span><strong><a href="https://github.com/Jennifer-Francis-Nkpornwi/Data-wrangling" target="_blank" rel="noopener" style="color:var(--electric);">View on GitHub &#8599;</a></strong></div>
+    </div>
+  </div>
+</header>
+
+<div class="case-cover wrap" style="margin-top:var(--sp-8);">
+  <img src="../images/case-studies/data-wrangling-cover.png" alt="Data Wrangling project cover — significant earthquake records 1965-2016">
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="case-body">
+
+      <h2>The business question</h2>
+      <p>Before any earthquake trend can be analyzed, the raw data has to be trustworthy. This Kaggle dataset of 23,000+ significant earthquakes from 1965–2016 came with inconsistent formatting, missing values, and structural issues that would have produced misleading results if analyzed as-is. The question wasn't "what do earthquakes trends look like" yet — it was "is this data even usable?"</p>
+
+      <h2>My approach</h2>
+      <p>Data wrangling is the unglamorous half of analysis that decides whether everything downstream can be trusted. I worked entirely in MySQL to get this dataset from raw export to analysis-ready.</p>
+      <ul>
+        <li>Audited the raw dataset for missing values, duplicate records, and inconsistent formatting</li>
+        <li>Standardized date, time, magnitude, and location fields into consistent types</li>
+        <li>Wrote SQL queries to validate range and consistency of key fields (magnitude, depth, coordinates)</li>
+        <li>Restructured the dataset into a clean, query-ready table suitable for downstream analysis or visualization</li>
+      </ul>
+
+      <div class="case-stats">
+        <div class="case-stat"><b>23,000+</b><span>Records cleaned</span></div>
+      <div class="case-stat"><b>51 yrs</b><span>Date range covered (1965–2016)</span></div>
+      <div class="case-stat"><b>MySQL</b><span>Primary tool</span></div>
+      <div class="case-stat"><b>Kaggle</b><span>Data source</span></div>
+      </div>
+
+      <h2>The starting point</h2>
+      <p>The project's framing slide — the scope of the raw dataset before cleaning began.</p>
+      <figure class="case-figure">
+        <img src="../images/case-studies/data-wrangling-cover.png" alt="Data wrangling project title card describing the earthquake dataset scope">
+        <figcaption>23,000+ significant earthquake records spanning five decades, before structuring.</figcaption>
+      </figure>
+
+      <h2>What it enabled</h2>
+      <p>The output is a dataset that's actually safe to build on — consistent types, validated ranges, and no silent duplicates or blank fields quietly skewing an eventual trend analysis. It's a deliberately unglamorous project, and that's the point: I wanted a portfolio piece that shows I won't skip the cleaning step just because it's less visually interesting than a finished dashboard.</p>
+
+      <div class="case-cta">
+        <p>Want the full breakdown — queries, data model, or wireframes?</p>
+        <a href="https://github.com/Jennifer-Francis-Nkpornwi/Data-wrangling" target="_blank" rel="noopener" class="btn btn-primary">View full repo on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="case-nav">
+        <a href="wealthbridge-investment-preference-analysis.html"><div class="dir">&larr; Previous</div><div class="ttl">WealthBridge Advisors: Investment Preference Analysis</div></a>
+        <a href="smartsave-business-analysis.html" class="next"><div class="dir">Next &rarr;</div><div class="ttl">SmartSave Business Analysis Case Study</div></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand">
+          <img src="../images/jf-mark.png" alt="JF monogram">
+          <span class="brand-text"><strong style="color:#fff;">Jennifer Francis</strong><span>Business &amp; Data Analyst</span></span>
+        </a>
+        <p>Clarity. Insight. Impact. Based in Port Harcourt, Nigeria — working with teams anywhere.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <a href="../about.html">About</a>
+          <a href="../projects.html">Projects</a>
+          <a href="../resume.html">Resume</a>
+          <a href="../contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="https://linkedin.com/in/jenniferfrancis-nkpornwi" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Jennifer-Francis-Nkpornwi" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:hello@jenniferfrancis.com">Email</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Jennifer Francis-Nkpornwi. All rights reserved.</span>
+      <span>Clarity. Insight. Impact.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
