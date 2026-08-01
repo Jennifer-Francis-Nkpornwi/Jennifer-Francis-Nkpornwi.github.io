@@ -1,303 +1,201 @@
-/* Reset */
+/* ===================================================
+   Jennifer Francis-Nkpornwi Portfolio Styles
+=================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+:root{
+ --primary:#0A3D62;
+ --secondary:#1E88E5;
+ --bg:#F7F9FC;
+ --text:#444;
+ --white:#fff;
+ --shadow:0 10px 25px rgba(0,0,0,.08);
+ --radius:16px;
 }
 
-/* Page */
-
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
-
-    font-family:Arial, Helvetica, sans-serif;
-
-    background:#f7f9fc;
-
+ font-family:'Poppins',sans-serif;
+ background:var(--bg);
+ color:var(--text);
+ line-height:1.7;
 }
+a{text-decoration:none}
+img{max-width:100%;display:block}
+ul{list-style:none}
 
-/* Header */
-
+/* HEADER */
 header{
-
-    background:white;
-
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-
+ position:sticky;
+ top:0;
+ z-index:999;
+ background:rgba(255,255,255,.96);
+ backdrop-filter:blur(8px);
+ box-shadow:0 2px 15px rgba(0,0,0,.05);
 }
-
-/* Navigation */
-
 .navbar{
-
-    width:90%;
-
-    max-width:1200px;
-
-    margin:auto;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:20px 0;
-
+ width:min(1200px,90%);
+ margin:auto;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:22px 0;
 }
+.logo{font-size:1.35rem;font-weight:700;color:var(--primary)}
+.nav-links{display:flex;gap:32px}
+.nav-links a{color:#333;font-weight:500;transition:.3s}
+.nav-links a:hover{color:var(--secondary)}
 
-/* Name */
-
-.logo{
-
-    font-size:24px;
-
-    font-weight:bold;
-
-    color:#0A3D62;
-
-}
-
-/* Menu */
-
-.nav-links{
-
-    list-style:none;
-
-    display:flex;
-
-    gap:30px;
-
-}
-
-/* Links */
-
-.nav-links a{
-
-    text-decoration:none;
-
-    color:#333;
-
-    font-weight:600;
-
-}
-
-/* Hover */
-
-.nav-links a:hover{
-
-    color:#1E88E5;
-
-}
-
-
-
-
-/* ===========================
-   HERO SECTION
-=========================== */
-
+/* HERO */
 .hero{
-
-    width:90%;
-
-    max-width:1200px;
-
-    margin:100px auto;
-
-    padding:80px 0;
-
+ width:min(1200px,90%);
+ margin:90px auto;
+ display:grid;
+ grid-template-columns:1.4fr .8fr;
+ gap:60px;
+ align-items:center;
 }
-
-.hero-content{
-
-    max-width:900px;
-
-    margin:auto;
-
-    text-align:center;
-
+.eyebrow{
+ color:var(--secondary);
+ font-size:.85rem;
+ font-weight:700;
+ letter-spacing:2px;
+ display:inline-block;
+ margin-bottom:20px;
 }
-.hero-tagline{
-
-    color:#1E88E5;
-
-    font-size:15px;
-
-    font-weight:700;
-
-    letter-spacing:2px;
-
-    text-transform:uppercase;
-
-    margin-bottom:20px;
-
+.hero h1{
+ font-size:clamp(3rem,6vw,5rem);
+ line-height:1.05;
+ color:var(--primary);
+ margin-bottom:24px;
 }
-
-.hero-headline{
-
-    font-size:72px;
-
-    line-height:1.05;
-
-    color:#0A3D62;
-
-    margin-bottom:25px;
-
-    font-weight:800;
-
-}
-
-.hero-name{
-
-    font-size:36px;
-
-    color:#222;
-
-    margin-bottom:10px;
-
-}
-
-.hero-title{
-
-    font-size:28px;
-
-    color:#555;
-
-    margin-bottom:30px;
-
-}
-
-.hero-description{
-
-    font-size:20px;
-
-    line-height:1.8;
-
-    color:#444;
-
-    margin-bottom:40px;
-
+.intro{
+ font-size:1.1rem;
+ margin-bottom:36px;
+ max-width:720px;
 }
 .hero-buttons{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
+ display:flex;
+ gap:20px;
+ flex-wrap:wrap;
 }
-
-.primary-btn{
-
-    background:#0A3D62;
-
-    color:white;
-
-    padding:16px 32px;
-
-    border-radius:8px;
-
-    text-decoration:none;
-
-    font-weight:bold;
-
+.btn-primary,.btn-secondary{
+ padding:16px 30px;
+ border-radius:12px;
+ font-weight:600;
+ transition:.3s;
 }
-
-.primary-btn:hover{
-
-    background:#1E88E5;
-
+.btn-primary{
+ background:var(--primary);
+ color:#fff;
 }
-
-.secondary-btn{
-
-    border:2px solid #0A3D62;
-
-    color:#0A3D62;
-
-    padding:16px 32px;
-
-    border-radius:8px;
-
-    text-decoration:none;
-
-    font-weight:bold;
-
+.btn-primary:hover{
+ background:var(--secondary);
+ transform:translateY(-3px);
 }
-
-.secondary-btn:hover{
-
-    background:#0A3D62;
-
-    color:white;
-
+.btn-secondary{
+ border:2px solid var(--primary);
+ color:var(--primary);
 }
-
-/* ==========================
-   ABOUT
-========================== */
-
-.about{
-
-    width:90%;
-    max-width:1200px;
-    margin:100px auto;
-
+.btn-secondary:hover{
+ background:var(--primary);
+ color:#fff;
 }
-
-.section-title{
-
-    text-align:center;
-    margin-bottom:60px;
-
+.hero-card{
+ background:#fff;
+ border-radius:20px;
+ padding:40px;
+ box-shadow:var(--shadow);
 }
-
-.section-title h2{
-
-    font-size:42px;
-    color:#0A3D62;
-    margin-bottom:15px;
-
+.stat{
+ padding:18px 0;
+ border-bottom:1px solid #eee;
 }
+.stat:last-child{border:none}
+.stat h2{color:var(--secondary);margin-bottom:6px}
 
-.section-title p{
-
-    font-size:20px;
-    color:#555;
-
+/* SECTIONS */
+.services,.projects,.cta{
+ width:min(1200px,90%);
+ margin:100px auto;
 }
-
-.journey-grid{
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-
+.section-heading{
+ text-align:center;
+ max-width:760px;
+ margin:0 auto 60px;
 }
-
-.journey-card{
-
-    background:white;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-    transition:.3s;
-
+.section-heading span{
+ color:var(--secondary);
+ font-weight:700;
+ letter-spacing:2px;
+ font-size:.85rem;
 }
-
-.journey-card:hover{
-
-    transform:translateY(-8px);
-
+.section-heading h2{
+ color:var(--primary);
+ font-size:2.4rem;
+ margin:12px 0;
 }
-
-.journey-card h3{
-
-    color:#0A3D62;
-    margin-bottom:15px;
-
+.services-grid,.project-grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+ gap:30px;
+}
+.service-card,.project-card{
+ background:#fff;
+ border-radius:18px;
+ padding:35px;
+ box-shadow:var(--shadow);
+ transition:.3s;
+}
+.service-card:hover,.project-card:hover{
+ transform:translateY(-8px);
+}
+.service-card h3,.project-card h3{
+ color:var(--primary);
+ margin-bottom:14px;
+}
+.service-card ul{
+ list-style:disc;
+ padding-left:20px;
+ margin-top:18px;
+}
+.project-type{
+ display:inline-block;
+ color:var(--secondary);
+ font-weight:600;
+ margin-bottom:12px;
+}
+.project-link{
+ display:inline-block;
+ margin-top:18px;
+ color:var(--secondary);
+ font-weight:600;
+}
+.projects-button{text-align:center;margin-top:40px}
+.cta{
+ background:var(--primary);
+ color:#fff;
+ border-radius:20px;
+ padding:70px 40px;
+ text-align:center;
+}
+.cta h2{font-size:2.2rem;margin-bottom:18px}
+.cta p{max-width:700px;margin:0 auto 30px}
+.cta .btn-primary{
+ background:#fff;
+ color:var(--primary);
+}
+footer{
+ background:#0b2f4d;
+ color:#fff;
+ text-align:center;
+ padding:35px 20px;
+ margin-top:80px;
+}
+@media(max-width:900px){
+ .hero{grid-template-columns:1fr}
+ .hero-card{order:-1}
+ .navbar{flex-direction:column;gap:20px}
+ .nav-links{flex-wrap:wrap;justify-content:center}
 }
