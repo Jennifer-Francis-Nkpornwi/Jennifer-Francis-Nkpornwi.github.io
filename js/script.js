@@ -42,8 +42,7 @@ function initReveal() {
         io.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-
+ }, { threshold: 0, rootMargin: '0px 0px 80px 0px' });
   items.forEach((el, i) => {
     el.style.transitionDelay = `${(i % 4) * 70}ms`;
     io.observe(el);
