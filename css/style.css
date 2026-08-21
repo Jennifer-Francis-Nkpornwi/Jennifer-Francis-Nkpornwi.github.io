@@ -379,6 +379,9 @@ footer{ background: var(--navy); color: var(--text-on-dark-soft); padding: var(-
 .resume-entry ul{ margin-top: var(--sp-3); }
 .resume-entry ul li{ font-size:15px; color: var(--text-soft); padding: 5px 0 5px 20px; position:relative; }
 .resume-entry ul li::before{ content:'—'; position:absolute; left:0; color: var(--azure); }
+.cert-link{ display:inline-flex; align-items:center; gap:6px; margin-top:10px; font-size:13.5px; font-weight:700; color: var(--azure); }
+.cert-link svg{ width:14px; height:14px; }
+.cert-link:hover{ text-decoration:underline; }
 .skill-pills{ display:flex; flex-wrap:wrap; gap:10px; }
 .skill-pill{ padding: 9px 16px; border-radius: var(--radius-s); background: var(--silver); font-size:14px; font-weight:600; }
 
