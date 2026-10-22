@@ -34,7 +34,7 @@
     <a href="../projects.html" class="case-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> All projects</a>
     <span class="eyebrow" style="color:var(--electric);">Data Analytics · Power BI</span>
     <h1>Women's Clothing E-Commerce Review Analysis</h1>
-    <p class="dek">Turning 23,486 unstructured customer reviews into a dashboard a merchandising team could actually use to decide what to fix first.</p>
+    <p class="dek">Turning 23,486 customer reviews into a Power BI dashboard and an executive summary that show what customers like, what frustrates them, and where to improve first.</p>
     <div class="case-meta">
       <div><span>Role</span><strong>Data Analyst</strong></div>
       <div><span>Tools</span><strong>Power BI, Excel, Power Query, Text Analytics</strong></div>
@@ -53,37 +53,56 @@
     <div class="case-body">
 
       <h2>The business question</h2>
-      <p>A retailer had 23,486 customer reviews sitting in a raw export and no structured read on what shoppers actually thought of the product line. Which departments were underperforming on satisfaction? Did recommendation behaviour actually track with star ratings? And what were customers repeatedly complaining about in the reviews that never got fixed?</p>
+      <p>The company's women's clothing e-commerce platform had 23,486 customer reviews and no structured read on what they were saying. The analysis set out to answer three questions:</p>
+      <ul>
+        <li>How satisfied are customers, and how likely are they to recommend the products?</li>
+        <li>What influences whether a customer recommends a product?</li>
+        <li>Where are the opportunities to improve product quality and the overall customer experience?</li>
+      </ul>
 
       <h2>My approach</h2>
-      <p>I cleaned and structured the review dataset, then built a Power BI dashboard that could be filtered live by division, department, product class, age group, and recommendation status — not a static report, something a merchandising lead could actually interrogate.</p>
+      <p>I prepared the review data, analysed ratings, recommendation behaviour, product categories, sentiment, and customer feedback, then built a Power BI dashboard that can be filtered by division, department, product class, age group, and recommendation status. The findings and recommendations are written up in an executive summary.</p>
       <ul>
-        <li>Cleaned and validated 23,486 review records for consistency and missing values</li>
-        <li>Built rating distribution and department-level satisfaction breakdowns</li>
-        <li>Cross-referenced recommendation behaviour against star ratings to catch mismatches</li>
-        <li>Ran sentiment analysis by product class to flag categories with a satisfaction problem despite decent ratings</li>
-        <li>Extracted common themes from low-rated reviews to surface recurring, fixable complaints</li>
+        <li>Measured satisfaction through average rating and recommendation rate</li>
+        <li>Tested how closely customer ratings track recommendation behaviour</li>
+        <li>Compared satisfaction across departments and product classes</li>
+        <li>Judged product performance by Negative Review Rate (negative reviews as a share of each class's reviews) instead of raw complaint counts</li>
+        <li>Analysed review text for recurring themes in lower-rated reviews</li>
       </ul>
 
       <div class="case-stats">
-        <div class="case-stat"><b>23,486</b><span>Reviews analyzed</span></div>
-      <div class="case-stat"><b>4.2/5</b><span>Average rating</span></div>
-      <div class="case-stat"><b>82%</b><span>Recommendation rate</span></div>
-      <div class="case-stat"><b>43 yrs</b><span>Average reviewer age</span></div>
+        <div class="case-stat"><b>23,486</b><span>Reviews analysed</span></div>
+        <div class="case-stat"><b>4.2/5</b><span>Average rating</span></div>
+        <div class="case-stat"><b>82%</b><span>Recommendation rate</span></div>
+        <div class="case-stat"><b>11.2%</b><span>Highest negative review rate (Blouses)</span></div>
       </div>
 
       <h2>The dashboard</h2>
-      <p>The finished Power BI dashboard — filterable by division, department, class, age group, and recommendation status.</p>
+      <p>The finished Power BI dashboard, filterable by division, department, product class, age group, and recommendation status.</p>
       <figure class="case-figure">
         <img src="../images/case-studies/women-clothing-dashboard.png" alt="Women's Clothing Customer Feedback Dashboard in Power BI">
-        <figcaption>Live filters across division, department, product class, age group, and recommendation status.</figcaption>
+        <figcaption>Ratings, recommendation behaviour, sentiment by product class, and common themes in low-rated reviews.</figcaption>
       </figure>
 
-      <h2>What it enabled</h2>
-      <p>The sentiment-by-product-class view surfaced categories — like Sweaters and Blouses — sitting at a lower sentiment score than their star rating alone would suggest, meaning a ratings-only view was masking a real satisfaction gap. The low-rated review word cloud consistently surfaced fit, sizing, and fabric quality as the recurring complaint themes, giving merchandising a concrete, prioritized starting point instead of a vague "reviews are mixed" summary.</p>
+      <h2>What the analysis found</h2>
+      <p>Customer satisfaction is strong: an average rating of 4.2 out of 5 and a recommendation rate of about 82%. Higher ratings were strongly linked to customers recommending the products, so improving satisfaction feeds directly into customer advocacy.</p>
+      <ul>
+        <li>Bottoms, Intimate, and Jackets earned the highest average ratings, while Trend scored lowest, which makes it a clear target for improvement</li>
+        <li>Dresses (6,319 reviews), Knits (4,843), and Blouses (3,097) drew the most engagement, making them the most influential product classes</li>
+        <li>Lower-rated reviews kept returning to fit, sizing consistency, fabric quality, comfort, and overall appearance</li>
+      </ul>
+
+      <h2>Counts versus rates</h2>
+      <p>Those same three classes also had the most negative reviews, but that mostly reflects how many reviews they receive. Negative Review Rate gives a fairer comparison: Blouses were highest at 11.2%, followed by Dresses at 10.9% and Knits at 10.4%. Tracking the rate of complaints rather than the count is a more accurate measure of how a product is really performing.</p>
+
+      <h2>Recommendations</h2>
+      <ul>
+        <li>Prioritise quality improvements for Dresses, Knits, and Blouses, focusing on fit accuracy, sizing consistency, fabric quality, and product descriptions. These high-volume classes are where improvement is likely to cut negative reviews the most.</li>
+        <li>Set up continuous feedback monitoring that tracks ratings, recommendation behaviour, sentiment, and Negative Review Rate by product class, so emerging product issues are caught early.</li>
+      </ul>
 
       <div class="case-cta">
-        <p>Want the full breakdown — queries, data model, or wireframes?</p>
+        <p>Want the full breakdown: dashboard, executive summary, and analysis?</p>
         <a href="https://github.com/Jennifer-Francis-Nkpornwi/Women-s-Clothing-E-Commerce-Customer-Review-Analysis" target="_blank" rel="noopener" class="btn btn-primary">View full repo on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
 
